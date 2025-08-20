@@ -1,0 +1,218 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  background: linear-gradient(to right, #0077b6, #00b4d8);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;   /* round image */
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header h1 span {
+  color: #ffd60a;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Section Styling */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #0077b6;
+}
+
+/* About Section */
+#about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1em;
+}
+
+/* Project Cards */
+.project-card {
+  background: #f1f1f1;
+  padding: 20px;
+  margin: 15px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  color: #023e8a;
+  margin-bottom: 10px;
+}
+
+/* Resume Section */
+#resume ul {
+  list-style: none;
+  padding: 0;
+}
+
+#resume li {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+/* Contact Section */
+#contact p {
+  margin: 10px 0;
+}
+
+#contact a {
+  color: #0077b6;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+#contact a {
+  color: #0077b6;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#contact a i {
+  margin-right: 6px;
+  color: #023e8a;  /* icon color */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Apply fade-in to sections */
+section {
+  padding: 40px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Profile Picture Hover Animation */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Project Card Hover Effect */
+.project-card {
+  background: #f1f1f1;
+  padding: 20px;
+  margin: 15px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Contact Icons Hover */
+#contact a {
+  color: #0077b6;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #ffd60a;
+}
+
+#contact a i {
+  margin-right: 6px;
+  transition: transform 0.3s ease;
+}
+
+#contact a:hover i {
+  transform: scale(1.2);
+}
+
+.education {
+  margin-top: 20px;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.education h3 {
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+.education p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.highlight {
+  color: #e63946;
+  font-weight: bold;
+  font-size: 1.2em;
+}
