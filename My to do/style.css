@@ -1,0 +1,176 @@
+/* General body styling */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* App box */
+.app-container {
+  max-width: 650px;
+  width: 90%;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #4a148c;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Task input section */
+.task-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.task-input input:focus {
+  border-color: #7b1fa2;
+  box-shadow: 0px 0px 6px rgba(123, 31, 162, 0.4);
+}
+
+.task-input button {
+  margin-left: 10px;
+  padding: 12px 16px;
+  background: #7b1fa2;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-input button:hover {
+  background: #4a148c;
+}
+
+/* Section headings */
+.tasks-section {
+  margin-top: 25px;
+}
+
+.tasks-section h2 {
+  color: #333;
+  padding: 8px;
+  border-left: 6px solid #7b1fa2;
+  background: #f3e5f5;
+  border-radius: 6px;
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+/* Task cards */
+li {
+  background: #fdfdfd;
+  margin-bottom: 12px;
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-left: 6px solid #9c27b0;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: translateY(-3px);
+}
+
+/* Task text */
+li span {
+  flex: 1;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Time stamp */
+.task-time {
+  font-size: 12px;
+  color: #777;
+  display: block;
+  margin-top: 4px;
+}
+
+/* Buttons */
+button.action {
+  margin-left: 5px;
+  padding: 6px 9px;
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.complete {
+  background: #2196f3;
+  color: white;
+}
+
+button.complete:hover {
+  background: #1565c0;
+}
+
+button.edit {
+  background: #ffc107;
+  color: black;
+}
+
+button.edit:hover {
+  background: #e0a800;
+}
+
+button.delete {
+  background: #e53935;
+  color: white;
+}
+
+button.delete:hover {
+  background: #b71c1c;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.95);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+/* Logo styling */
+.logo {
+  width: 60px;       /* adjust size */
+  height: 60px;      /* keep square ratio */
+  margin-right: 12px;
+  border-radius: 12px; /* optional rounded corners */
+  object-fit: cover;  /* keeps image aspect ratio without distortion */
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2); /* subtle shadow */
+}
